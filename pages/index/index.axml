@@ -1,0 +1,3 @@
+<view>
+  <bottom-button-view data={{buttons}} />
+</view>

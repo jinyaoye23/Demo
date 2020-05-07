@@ -1,0 +1,100 @@
+.bottom-button-view-container {
+    height: 120rpx;
+    width: 100%;
+    background: white;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bottom-button-top-line {
+    position: absolute;
+    display: flex;
+    top: 0rpx;
+    height: 1px;
+    width: 100%;
+    background: -webkit-linear-gradient(#EDEDED, white);
+}
+
+.moreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112rpx;
+    height: 120rpx;
+    font-size: 32rpx;
+}
+
+.bottom-button-soild {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    height: 88rpx;
+    border-radius: 2pt;
+    color: white;
+    border: 1px solid #1A85E4;
+}
+
+.bottom-button-hollow {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    height: 88rpx;
+    color: #1A85E4;
+    border-radius: 2pt;
+    border: 1px solid #1A85E4;
+}
+
+.single-bottom-button {
+    flex: 1;
+    margin: 16rpx 32rpx;
+    font-size: 32rpx;
+    height: 88rpx;
+    /* width: 90%; */
+    /* background: #1A85E4; */
+    border-radius: 2pt;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-price-button {
+    margin: 16rpx 32rpx;
+    font-size: 32rpx;
+    height: 88rpx;
+    width: 35%;
+    /* background: #1A85E4; */
+    border-radius: 2pt;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popoverStyle {
+    margin-left: 32rpx;
+    /* background: red; */
+    /* margin-bottom: 120rpx; */
+    /* padding-bottom: 120rpx; */
+}
+
+.popbgView {
+    position: fixed;
+    top: 0;
+    bottom: 120rpx;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+}

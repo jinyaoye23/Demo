@@ -1,0 +1,43 @@
+<view class="bottom-button-view-container">
+  <view a:if="{{show}}" class="popbgView" onTap="closePopbgView"></view>
+  <view class="bottom-button-top-line"></view>
+  <block a:if="{{!!showPrice}}">
+    <view class="row align-items-center" style="flex: 1; justify-content: space-between">
+      <slot name="descriptText"/>
+      <!--<text style="margin-left: 32rpx; font-size: 32rpx; color: #313233">总金额：<text class="red-color" tyle="font-size: 28rpx">{{`¥ `}}<text style="font-size: 36rpx; font-weight: 500">120</text></text></text> -->
+      <view onTap="itemTap" data-item={{data[0]}} class="show-price-button main-color-background" hover-class="btn-click-hover">{{data[0].name}}</view>
+    </view>
+  </block>
+  <block a:else>
+    <block a:if="{{data.length > 2 }}">
+      <view class="row align-items-center" style="flex: 1;">
+        <popover class="popoverStyle" position="{{position}}" show="{{show}}" showMask="{{showMask}}" onMaskClick="onMaskClick">
+          <view class="moreButton main-color" onTap="onMoreButtonClick">更多</view>
+          <view slot="items">
+            <block a:for="{{moreButtons}}">
+              <view onTap="itemTap" data-item={{item}} data-index={{index}}>
+                <popover-item >
+                  <text>{{item.name}}</text>
+                </popover-item>
+              </view>
+            </block>
+          </view>
+        </popover>
+        <view class="row align-items-center" style="flex: 1;">
+          <view onTap="itemTap" data-item={{bottomButtons[1]}} class="bottom-button-hollow" hover-class="btn-click-hover" style="margin-left: 32rpx">{{bottomButtons[1].name}}</view>
+          <view onTap="itemTap" data-item={{bottomButtons[0]}} class="bottom-button-soild main-color-background" hover-class="btn-click-hover" style="margin-left:16rpx; margin-right: 32rpx">{{bottomButtons[0].name}}</view>
+        </view>
+      </view>
+    </block>
+    <block a:elif={{data.length == 2}}>
+      <view class="row align-items-center" style="flex: 1;">
+        <view onTap="itemTap" data-item={{data[1]}} class="bottom-button-hollow" hover-class="btn-click-hover" style="margin-left: 32rpx">{{data[1].name}}</view>
+        <view onTap="itemTap" data-item={{data[0]}} class="bottom-button-soild main-color-background" hover-class="btn-click-hover" style="margin-left:16rpx; margin-right: 32rpx">{{data[0].name}}</view>
+      </view>
+    </block>
+    <block a:elif={{data.length == 1}}>
+      <view onTap="itemTap" data-item={{data[0]}} class="single-bottom-button main-color-background" hover-class="btn-click-hover">{{data[0].name}}</view>
+    </block>
+  </block>
+  <!--</view> -->
+</view>

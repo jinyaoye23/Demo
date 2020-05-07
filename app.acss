@@ -1,0 +1,190 @@
+.main-color-background {
+  background-color: #1A85E4;
+}
+
+.btn-hover {
+  opacity: 0.8;
+}
+
+.txt-word-break {
+  word-break: break-all;
+  line-height: 44rpx;
+}
+
+.tab-no-data {
+  height: 50vh !important
+}
+
+.nodata {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh
+}
+
+.bottom-line {
+  height: 1px;
+  width: 100%;
+  background: -webkit-linear-gradient(#EDEDED, white);
+}
+
+.bottom-line-no-width {
+  height: 1px;
+  background: -webkit-linear-gradient(#EDEDED, white);
+}
+
+.bottom-line-8pt {
+  height: 8px;
+  width: 100%;
+  background: #EDEDED;
+}
+
+.absolute-keep-left {
+  position: absolute;
+  left: 0
+}
+
+.width-1px {
+  width: 1px
+}
+
+.place-holder {
+  font-size: 32rpx !important;
+  color: #A1A3A6 !important;
+}
+
+.nothing-style {
+  height: 100rpx;
+  font-size: 32rpx;
+  color: #A1A3A6
+}
+
+.list-wraper {
+  flex-grow: 1;
+  position: relative;
+}
+
+.txt-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.bottom-button {
+  background: #1A85E4;
+  height: 88rpx;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 2pt;
+}
+
+.fixed-bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+.display-inline-block {
+  display: inline-block
+}
+
+.scroll-horizontal {
+  width: 100%;
+  /* height: 180rpx; */
+  white-space: nowrap;
+}
+
+.fixed-top {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.flex {
+  flex: 1;
+  display: flex;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-line {
+  height: 1px;
+  /* background: #EDEDED; */
+  width: 100%;
+  background: -webkit-linear-gradient(#EDEDED, white);
+}
+
+.bottom-line-8pt {
+  height: 8px;
+  width: 100%;
+  background: #F5F5F5;
+}
+
+.bottom-line-2 {
+  height: 1px;
+  background: -webkit-linear-gradient(#EDEDED, white);
+}
+
+.nowrap {
+  /* flex-flow: row nowrap;
+  display: flex; */
+  width: 0;
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
